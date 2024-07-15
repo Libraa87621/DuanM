@@ -5,14 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="Login_SingIn.UserActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        tools:context="Login_SingIn.UserActivity">
-
+        android:layout_height="match_parent">
         <!-- Toolbar -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -21,24 +19,27 @@
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-            <TextView
-                android:id="@+id/toolbar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Đăng Nhập"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
+
 
             <!-- Menu ImageButton -->
             <ImageButton
                 android:id="@+id/iconMenu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="start"
-                android:background="@color/white"
+                android:src="@drawable/menu_ic"
                 android:contentDescription="Menu"
-                android:src="@drawable/menu" />
+                app:menu="@menu/popup_menu"
+                />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Đăng Nhập"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
         </androidx.appcompat.widget.Toolbar>
 
         <!-- Tab Layout -->
@@ -135,13 +136,13 @@
             android:scaleType="fitXY"
             android:src="@drawable/img_card" />
 
-        <!-- Bottom Navigation -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             app:menu="@menu/bottom_nav_menu" />
+
     </RelativeLayout>
 
 </LinearLayout>
