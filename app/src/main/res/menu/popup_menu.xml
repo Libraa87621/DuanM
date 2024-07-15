@@ -1,20 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_home"
-        android:title="Trang chủ" />
+        android:title="Trang chủ"
+        android:icon="@drawable/home" />
     <item
         android:id="@+id/menu_thue_xe"
-        android:title="Thuê xe" />
+        android:title="Thuê xe"
+        android:icon="@drawable/bus" />
     <item
         android:id="@+id/menu_ve_may_bay"
-        android:title="Vé máy bay" />
+        android:title="Vé máy bay"
+        android:icon="@drawable/luggage" />
     <item
         android:id="@+id/menu_lien_he"
-        android:title="Liên hệ" />
+        android:title="Liên hệ"
+        android:icon="@drawable/phone" />
     <item
         android:id="@+id/menu_gioi_thieu"
-        android:title="Giới thiệu" />
+        android:title="Giới thiệu"
+        android:icon="@drawable/star" />
     <item
         android:id="@+id/menu_dang_xuat"
-        android:title="Đăng xuất" />
+        android:title="Đăng xuất"
+        android:icon="@drawable/logout" />
 </menu>
