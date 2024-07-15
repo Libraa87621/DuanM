@@ -32,7 +32,7 @@
             android:exported="false" />
         <activity
             android:name="Login_SingIn.SignupActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="Login_SingIn.LoginActivity"
             android:exported="false" />
