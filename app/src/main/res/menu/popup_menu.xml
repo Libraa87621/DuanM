@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Trang chủ"/>
+    <item
+        android:id="@+id/menu_rent_car"
+        android:title="Thuê xe"/>
+    <item
+        android:id="@+id/menu_flight_tickets"
+        android:title="Vé máy bay"/>
+    <item
+        android:id="@+id/menu_contact"
+        android:title="Liên hệ"/>
+    <item
+        android:id="@+id/menu_about"
+        android:title="Giới thiệu"/>
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Đăng xuất"/>
+</menu>

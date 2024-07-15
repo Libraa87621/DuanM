@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InvoiceDetailsActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Hóa đơn thanh toán"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#92ADF4"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/date_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_below="@id/header"
+        android:background="#d3d3d3">
+
+        <TextView
+            android:id="@+id/label_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="NGÀY/THÁNG/NĂM"
+            android:textColor="#f000" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="1/1/2024"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/label_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="GIỜ THANH TOÁN"
+            android:textColor="#f000" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="00:00 PM"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/invoice_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/date_time_layout"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/invoice_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi Tiết"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SDT: 0868038997"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên: Nguyễn Văn An"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: Thôn 7a, Xã Eakaly, Huyện Krông Pắk, Tỉnh Đắk Lắk"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuyến: Đắk Lắk ------> Tp.HCM"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vào Lúc: 17h00, Ngày 15 Tháng 7 Năm 2024"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhà xe: Loan Sáng ( Limosin )"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hình thức thanh toán: Chuyển khoản ( MB Bank )"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng vé: 1"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số tiền: 200.000 VND"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trạng Thái: Đã Thanh Toán"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</RelativeLayout>
