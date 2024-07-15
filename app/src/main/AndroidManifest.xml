@@ -17,7 +17,7 @@
             android:exported="false" />
         <activity
             android:name="User.HoaDonActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="Login_SingIn.ticketdadiAcivity"
             android:exported="false" />
